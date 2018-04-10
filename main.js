@@ -33,12 +33,12 @@ myAxiosCalls(function(Jason){
 	document.getElementById("raikouImg").src = "images/Raikou.png"
 
 
-	nameR.innerHTML = Jason.all[0].name  
-	hpValueR.innerHTML = Jason.all[0].hp
-	attackValueR.innerHTML = Jason.all[0].attack
-	defenseValueR.innerHTML = Jason.all[0].defense
-	ability1R.innerHTML = Jason.all[0].abilities1
-	ability2R.innerHTML = Jason.all[0].abilities2
+	nameR.innerHTML = Jason.all[1].name  
+	hpValueR.innerHTML = Jason.all[1].hp
+	attackValueR.innerHTML = Jason.all[1].attack
+	defenseValueR.innerHTML = Jason.all[1].defense
+	ability1R.innerHTML = Jason.all[1].abilities1
+	ability2R.innerHTML = Jason.all[1].abilities2
 
 //amphoras
 
@@ -50,12 +50,12 @@ myAxiosCalls(function(Jason){
 	let ability2A = document.querySelector(".ampharos-ability-2")
 	document.getElementById("ampharosImg").src = "images/Ampharos.png"
 
-	nameA.innerHTML = Jason.all[0].name  
-	hpValueA.innerHTML = Jason.all[0].hp
-	attackValueA.innerHTML = Jason.all[0].attack
-	defenseValueA.innerHTML = Jason.all[0].defense
-	ability1A.innerHTML = Jason.all[0].abilities1
-	ability2A.innerHTML = Jason.all[0].abilities2
+	nameA.innerHTML = Jason.all[2].name  
+	hpValueA.innerHTML = Jason.all[2].hp
+	attackValueA.innerHTML = Jason.all[2].attack
+	defenseValueA.innerHTML = Jason.all[2].defense
+	ability1A.innerHTML = Jason.all[2].abilities1
+	ability2A.innerHTML = Jason.all[2].abilities2
 
  })
 
