@@ -75,7 +75,7 @@ header {
   list-style: none;
   background-color: transparent;
   position: fixed;
-  margin: 260px 20px;
+  margin: 120px 5px;
   padding: 0;
   opacity: 1;
   animation-name: fadeIn;
@@ -87,7 +87,7 @@ header {
   width: 60px; }
 
 .show li {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   list-style: none; }
 
 /*--- Trainer Section ---*/
