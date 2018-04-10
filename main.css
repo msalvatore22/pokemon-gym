@@ -413,3 +413,33 @@ header {
 
   .show {
     margin: 120px 5px; } }
+
+  .t1{
+      width: 320px;
+      height: 300px;
+      position :relative;
+      animation: mymoveleft 1.25s forwards;
+    }
+  
+  .t2{
+        width: 150px;
+        height: 300px;
+        position :relative;
+        animation: mymoveright 1.25s forwards;
+      }
+
+@keyframes mymoveleft {
+from {left: -200px;}
+to {left: 0px;}}
+
+@keyframes mymoveright {
+from {right: -200px;}
+to {right: 50px;}}
+
+@keyframes spinIt { 
+  0% { transform: rotate(-20deg); } 
+  100% { transform: rotate(20deg); } }
+
+            
+
+        
