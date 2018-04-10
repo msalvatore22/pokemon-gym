@@ -16,7 +16,43 @@ axiosCalls(function(Zardchar){
 	attackValueM.innerHtml = moltres.attack
 	defenseValueM.innerHtml = moltres.defense
 	ability1M = moltres.abilities[0]
-	abilites = moltres.abilities[1]
+	abilites2M = moltres.abilities[1]
+
+	//suicune
+	let nameS = document.querySelector(".suicune-name")
+	let hpValueS = document.querySelector(".suicune-hp-value")
+	let attackValueS = document.querySelector(".suicune-attack-value")
+	let defenseValueS = document.querySelector(".suicune-defense-value")
+	let ability1S = document.querySelector(".suicune-ability-1")
+	let ability2S = document.querySelector(".suicune-ability-2")
+	document.getElementById("suicuneImg").src = "images/Suicune.png"
+
+	let suicune = Zardchar.all[1]
+	
+	nameS.innerHTML = suicune.name
+	hpValueS.innerHtml = suicune.hp
+	attackValueS.innerHtml = suicune.attack
+	defenseValueS.innerHtml = suicune.defense
+	ability1S = suicune.abilities[0]
+	abilites2S = suicune.abilities[1]
+
+	//ho-oh
+	let nameH = document.querySelector(".ho-oh-name")
+	let hpValueH = document.querySelector(".ho-oh-hp-value")
+	let attackValueH = document.querySelector(".ho-oh-attack-value")
+	let defenseValueH = document.querySelector(".ho-oh-defense-value")
+	let ability1H = document.querySelector(".ho-oh-ability-1")
+	let ability2H = document.querySelector(".ho-oh-ability-2")
+	document.getElementById("hoOhImg").src = "images/Ho-Oh.png"
+
+	let hoOh = Zardchar.all[2]
+	
+	nameH.innerHTML = hoOh.name
+	hpValueH.innerHtml = hoOh.hp
+	attackValueH.innerHtml = hoOh.attack
+	defenseValueH.innerHtml = hoOh.defense
+	ability1H = hoOh.abilities[0]
+	abilites2H = hoOh.abilities[1]
 })
 
 
