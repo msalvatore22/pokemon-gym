@@ -145,6 +145,21 @@ document.querySelector(".nav-btn-ho-oh").addEventListener('click', (event) => {
 	section.scrollIntoView({behavior: "smooth"});
 });
 
+document.querySelector(".nav-btn-zapdos").addEventListener('click', (event) => {
+	let section = document.getElementById("zapdos")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".nav-btn-raikou").addEventListener('click', (event) => {
+	let section = document.getElementById("raikou")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".nav-btn-ampharos").addEventListener('click', (event) => {
+	let section = document.getElementById("ampharos")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
 document.querySelector(".vertical-trainer").addEventListener('click', (event) => {
 	let section = document.getElementById("trainer")
 	section.scrollIntoView({behavior: "smooth"});
