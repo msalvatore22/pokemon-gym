@@ -1,5 +1,65 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 axiosCalls(function(Zardchar){
-	// console.log(Zardchar)
+	console.log(Zardchar)
+
 //moltres
 	let nameM = document.querySelector(".moltres-name")
 	let hpValueM = document.querySelector(".moltres-hp-value")
@@ -10,13 +70,13 @@ axiosCalls(function(Zardchar){
 	document.getElementById("moltresImg").src = "images/Moltres.png"
 	
 	nameM.innerHTML = Zardchar.all[0].name
-	hpValueM.innerHtml = Zardchar.all[0].hp
-	attackValueM.innerHtml = Zardchar.all[0].attack
-	defenseValueM.innerHtml = Zardchar.all[0].defense
-	ability1M.innerHtml = Zardchar.all[0].abilities[0]
-	ability2M.innerHtml = Zardchar.all[0].abilities[1]
+	hpValueM.innerHTML = Zardchar.all[0].hp
+	attackValueM.innerHTML = Zardchar.all[0].attack
+	defenseValueM.innerHTML = Zardchar.all[0].defense
+	ability1M.innerHTML = Zardchar.all[0].abilities1
+	ability2M.innerHTML = Zardchar.all[0].abilities2
 
-	//suicune
+//suicune
 	let nameS = document.querySelector(".suicune-name")
 	let hpValueS = document.querySelector(".suicune-hp-value")
 	let attackValueS = document.querySelector(".suicune-attack-value")
@@ -28,13 +88,13 @@ axiosCalls(function(Zardchar){
 	
 	
 	nameS.innerHTML = Zardchar.all[1].name
-	hpValueS.innerHtml = Zardchar.all[1].hp
-	attackValueS.innerHtml = Zardchar.all[1].attack
-	defenseValueS.innerHtml = Zardchar.all[1].defense
-	ability1S.innerHtml = Zardchar.all[1].abilities[0]
-	ability2S.innerHtml = Zardchar.all[1].abilities[1]
+	hpValueS.innerHTML = Zardchar.all[1].hp
+	attackValueS.innerHTML = Zardchar.all[1].attack
+	defenseValueS.innerHTML = Zardchar.all[1].defense
+	ability1S.innerHTML = Zardchar.all[1].abilities1
+	ability2S.innerHTML = Zardchar.all[1].abilities2
 
-	//ho-oh
+//ho-oh
 	let nameH = document.querySelector(".ho-oh-name")
 	let hpValueH = document.querySelector(".ho-oh-hp-value")
 	let attackValueH = document.querySelector(".ho-oh-attack-value")
@@ -46,37 +106,12 @@ axiosCalls(function(Zardchar){
 	
 	
 	nameH.innerHTML = Zardchar.all[2].name
-	hpValueH.innerHtml = Zardchar.all[2].hp
-	attackValueH.innerHtml = Zardchar.all[2].attack
-	defenseValueH.innerHtml =Zardchar.all[2].defense
-	ability1H.innerHtml = Zardchar.all[2].abilities[0]
-	ability2H.innerHtml = Zardchar.all[2].abilities[1]
+	hpValueH.innerHTML = Zardchar.all[2].hp
+	attackValueH.innerHTML = Zardchar.all[2].attack
+	defenseValueH.innerHTML =Zardchar.all[2].defense
+	ability1H.innerHTML = Zardchar.all[2].abilities1
+	ability2H.innerHTML = Zardchar.all[2].abilities2
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 window.addEventListener("scroll", (event) => {
 	let showNav = document.querySelectorAll(".vertical-nav")
