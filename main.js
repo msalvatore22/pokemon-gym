@@ -160,7 +160,7 @@ document.querySelector(".nav-btn-ampharos").addEventListener('click', (event) =>
 	section.scrollIntoView({behavior: "smooth"});
 });
 
-document.querySelector(".vertical-trainer").addEventListener('click', (event) => {
+document.querySelector(".vertical-ball").addEventListener('click', (event) => {
 	let section = document.getElementById("trainer")
 	section.scrollIntoView({behavior: "smooth"});
 });
