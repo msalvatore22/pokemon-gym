@@ -32,7 +32,7 @@
     function myAxiosCalls(callback) {
         let url1 = "https://pokeapi.co/api/v2/pokemon/145/"
         let url2 = "https://pokeapi.co/api/v2/pokemon/243/"
-        let url3 = "https://pokeapi.co/api/v2/pokemon/205/"
+        let url3 = "https://pokeapi.co/api/v2/pokemon/181/"
     
     axios.all([
         axios.get(url1),

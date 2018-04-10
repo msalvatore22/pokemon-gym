@@ -1,52 +1,62 @@
-
 myAxiosCalls(function(Jason){
     //we first have to set the variable of nameZ 
     //and link it ot the elemnt of the HTML file
     //next well pull data from our libraries
   
-     
-var nameZ = document.querySelector(".zname")
-var hpValueZ = document.querySelector(".zhp")
-var attackValueZ = document.querySelector(".zatk")
-var defenseValueZ = document.querySelector(".zdef")  
-var ability1Z = document.querySelector(".zabi1")
-var ability2Z = document.querySelector(".zabi2") 
+//zapdos   
 
-var nameR = document.querySelector(".rname")
-var hpValueR = document.querySelector(".rhp")
-var attackValueR = document.querySelector(".ratk")
-var defenseValueR = document.querySelector(".rdef")  
-var ability1R = document.querySelector(".rabi1")
-var ability2R = document.querySelector(".rabi2")
+	let nameZ = document.querySelector(".zapdos-name")
+	let hpValueZ = document.querySelector(".zapdos-hp-value")
+	let attackValueZ = document.querySelector(".zapdos-attack-value")
+	var defenseValueZ = document.querySelector(".zapdos-defense-value")  
+	let ability1Z = document.querySelector(".zapdos-ability-1")
+	let ability2Z = document.querySelector(".zapdos-ability-2") 
+	document.getElementById("zapdosImg").src = "images/Zapdos.png"
 
-var nameA = document.querySelector(".aname")
-var hpValueA = document.querySelector(".ahp")
-var attackValueA = document.querySelector(".aatk")
-var defenseValueA = document.querySelector(".adef")  
-var ability1A = document.querySelector(".aabi1")
-var ability2A = document.querySelector(".aabi2")
-     
+	
 
-nameZ.innerHTML = Jason.all[0].name  
-hpValueZ.innerHTML = Jason.all[0].hp
-attackValueZ.innerHTML = Jason.all[0].attack
-defenseValueZ.innerHTML = Jason.all[0].defense
-ability1Z.innerHTML = Jason.all[0].abilities1
-ability2Z.innerHTML = Jason.all[0].abilities2
+	nameZ.innerHTML = Jason.all[0].name  
+	hpValueZ.innerHTML = Jason.all[0].hp
+	attackValueZ.innerHTML = Jason.all[0].attack
+	defenseValueZ.innerHTML = Jason.all[0].defense
+	ability1Z.innerHTML = Jason.all[0].abilities1
+	ability2Z.innerHTML = Jason.all[0].abilities2
 
-nameR.innerHTML = Jason.all[0].name  
-hpValueR.innerHTML = Jason.all[0].hp
-attackValueR.innerHTML = Jason.all[0].attack
-defenseValueR.innerHTML = Jason.all[0].defense
-ability1R.innerHTML = Jason.all[0].abilities1
-ability2R.innerHTML = Jason.all[0].abilities2
+//raikou
 
-nameA.innerHTML = Jason.all[0].name  
-hpValueA.innerHTML = Jason.all[0].hp
-attackValueA.innerHTML = Jason.all[0].attack
-defenseValueA.innerHTML = Jason.all[0].defense
-ability1A.innerHTML = Jason.all[0].abilities1
-ability2A.innerHTML = Jason.all[0].abilities2
+	let nameR = document.querySelector(".raikou-name")
+	let hpValueR = document.querySelector(".raikou-hp-value")
+	let attackValueR = document.querySelector(".raikou-attack-value")
+	let defenseValueR = document.querySelector(".raikou-defense-value")  
+	let ability1R = document.querySelector(".raikou-ability-1")
+	let ability2R = document.querySelector(".raikou-ability-2")
+	document.getElementById("raikouImg").src = "images/Raikou.png"
+
+
+	nameR.innerHTML = Jason.all[1].name  
+	hpValueR.innerHTML = Jason.all[1].hp
+	attackValueR.innerHTML = Jason.all[1].attack
+	defenseValueR.innerHTML = Jason.all[1].defense
+	ability1R.innerHTML = Jason.all[1].abilities1
+	ability2R.innerHTML = Jason.all[1].abilities2
+
+//amphoras
+
+	let nameA = document.querySelector(".ampharos-name")
+	let hpValueA = document.querySelector(".ampharos-hp-value")
+	let attackValueA = document.querySelector(".ampharos-attack-value")
+	let defenseValueA = document.querySelector(".ampharos-defense-value")  
+	let ability1A = document.querySelector(".ampharos-ability-1")
+	let ability2A = document.querySelector(".ampharos-ability-2")
+	document.getElementById("ampharosImg").src = "images/Ampharos.png"
+
+	nameA.innerHTML = Jason.all[2].name  
+	hpValueA.innerHTML = Jason.all[2].hp
+	attackValueA.innerHTML = Jason.all[2].attack
+	defenseValueA.innerHTML = Jason.all[2].defense
+	ability1A.innerHTML = Jason.all[2].abilities1
+	ability2A.innerHTML = Jason.all[2].abilities2
+
  })
 
 
@@ -135,6 +145,21 @@ document.querySelector(".nav-btn-ho-oh").addEventListener('click', (event) => {
 	section.scrollIntoView({behavior: "smooth"});
 });
 
+document.querySelector(".nav-btn-zapdos").addEventListener('click', (event) => {
+	let section = document.getElementById("zapdos")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".nav-btn-raikou").addEventListener('click', (event) => {
+	let section = document.getElementById("raikou")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".nav-btn-ampharos").addEventListener('click', (event) => {
+	let section = document.getElementById("ampharos")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
 document.querySelector(".vertical-trainer").addEventListener('click', (event) => {
 	let section = document.getElementById("trainer")
 	section.scrollIntoView({behavior: "smooth"});
@@ -152,5 +177,20 @@ document.querySelector(".vertical-suicune").addEventListener('click', (event) =>
 
 document.querySelector(".vertical-ho-oh").addEventListener('click', (event) => {
 	let section = document.getElementById("ho-oh")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-zapdos").addEventListener('click', (event) => {
+	let section = document.getElementById("zapdos")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-raikou").addEventListener('click', (event) => {
+	let section = document.getElementById("raikou")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+document.querySelector(".vertical-ampharos").addEventListener('click', (event) => {
+	let section = document.getElementById("ampharos")
 	section.scrollIntoView({behavior: "smooth"});
 });

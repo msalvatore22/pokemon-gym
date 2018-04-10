@@ -41,6 +41,7 @@ axios.all([
 	]).then(responses => {
 		responses.forEach(response => {
 			let data = response.data
+			
 			let pokemon = new ZPokemon (
 			data.name,
 			data.stats[5].base_stat,
