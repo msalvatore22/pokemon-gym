@@ -11,7 +11,8 @@ myAxiosCalls(function(Jason){
 	var defenseValueZ = document.querySelector(".zdef")  
 	let ability1Z = document.querySelector(".zabi1")
 	let ability2Z = document.querySelector(".zabi2") 
-
+	document.getElementById("zapdosImg").src = "images/Zapdos.png"
+	
 	nameZ.innerHTML = Jason.all[0].name  
 	hpValueZ.innerHTML = Jason.all[0].hp
 	attackValueZ.innerHTML = Jason.all[0].attack
@@ -26,7 +27,8 @@ myAxiosCalls(function(Jason){
 	let defenseValueR = document.querySelector(".rdef")  
 	let ability1R = document.querySelector(".rabi1")
 	let ability2R = document.querySelector(".rabi2")
-
+	document.getElementById("raikouImg").src = "images/Raikou.png"
+	
 	nameR.innerHTML = Jason.all[0].name  
 	hpValueR.innerHTML = Jason.all[0].hp
 	attackValueR.innerHTML = Jason.all[0].attack
@@ -41,7 +43,8 @@ myAxiosCalls(function(Jason){
 	let defenseValueA = document.querySelector(".adef")  
 	let ability1A = document.querySelector(".aabi1")
 	let ability2A = document.querySelector(".aabi2")
-	     
+	document.getElementById("ampharosImg").src = "images/Ampharos.png"  
+
 	nameA.innerHTML = Jason.all[0].name  
 	hpValueA.innerHTML = Jason.all[0].hp
 	attackValueA.innerHTML = Jason.all[0].attack
