@@ -16,12 +16,13 @@
     }
     
     class Jpokemon {
-    constructor(name, hp, attack, defense, abilities) {
+    constructor(name, hp, attack, defense, abilities1, abilities2) {
             this.name = name;
             this.hp = hp;
             this.attack = attack;
             this.defense = defense;
-            this.abilities = abilities;
+            this.abilities1 = abilities1;
+            this.abilities2 = abilities2;
         }
     }
 
