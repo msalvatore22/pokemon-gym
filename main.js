@@ -1,5 +1,5 @@
 axiosCalls(function(Zardchar){
-	console.log(Zardchar)
+	// console.log(Zardchar)
 //moltres
 	let nameM = document.querySelector(".moltres-name")
 	let hpValueM = document.querySelector(".moltres-hp-value")
@@ -8,15 +8,13 @@ axiosCalls(function(Zardchar){
 	let ability1M = document.querySelector(".moltres-ability-1")
 	let ability2M = document.querySelector(".moltres-ability-2")
 	document.getElementById("moltresImg").src = "images/Moltres.png"
-
-	let moltres = Zardchar.all[0]
 	
-	nameM.innerHTML = moltres.name
-	hpValueM.innerHtml = moltres.hp
-	attackValueM.innerHtml = moltres.attack
-	defenseValueM.innerHtml = moltres.defense
-	ability1M = moltres.abilities[0]
-	abilites2M = moltres.abilities[1]
+	nameM.innerHTML = Zardchar.all[0].name
+	hpValueM.innerHtml = Zardchar.all[0].hp
+	attackValueM.innerHtml = Zardchar.all[0].attack
+	defenseValueM.innerHtml = Zardchar.all[0].defense
+	ability1M.innerHtml = Zardchar.all[0].abilities[0]
+	ability2M.innerHtml = Zardchar.all[0].abilities[1]
 
 	//suicune
 	let nameS = document.querySelector(".suicune-name")
@@ -27,14 +25,14 @@ axiosCalls(function(Zardchar){
 	let ability2S = document.querySelector(".suicune-ability-2")
 	document.getElementById("suicuneImg").src = "images/Suicune.png"
 
-	let suicune = Zardchar.all[1]
 	
-	nameS.innerHTML = suicune.name
-	hpValueS.innerHtml = suicune.hp
-	attackValueS.innerHtml = suicune.attack
-	defenseValueS.innerHtml = suicune.defense
-	ability1S = suicune.abilities[0]
-	abilites2S = suicune.abilities[1]
+	
+	nameS.innerHTML = Zardchar.all[1].name
+	hpValueS.innerHtml = Zardchar.all[1].hp
+	attackValueS.innerHtml = Zardchar.all[1].attack
+	defenseValueS.innerHtml = Zardchar.all[1].defense
+	ability1S.innerHtml = Zardchar.all[1].abilities[0]
+	ability2S.innerHtml = Zardchar.all[1].abilities[1]
 
 	//ho-oh
 	let nameH = document.querySelector(".ho-oh-name")
@@ -45,14 +43,14 @@ axiosCalls(function(Zardchar){
 	let ability2H = document.querySelector(".ho-oh-ability-2")
 	document.getElementById("hoOhImg").src = "images/Ho-Oh.png"
 
-	let hoOh = Zardchar.all[2]
 	
-	nameH.innerHTML = hoOh.name
-	hpValueH.innerHtml = hoOh.hp
-	attackValueH.innerHtml = hoOh.attack
-	defenseValueH.innerHtml = hoOh.defense
-	ability1H = hoOh.abilities[0]
-	abilites2H = hoOh.abilities[1]
+	
+	nameH.innerHTML = Zardchar.all[2].name
+	hpValueH.innerHtml = Zardchar.all[2].hp
+	attackValueH.innerHtml = Zardchar.all[2].attack
+	defenseValueH.innerHtml =Zardchar.all[2].defense
+	ability1H.innerHtml = Zardchar.all[2].abilities[0]
+	ability2H.innerHtml = Zardchar.all[2].abilities[1]
 })
 
 
