@@ -1,13 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pokemon Gym</title>
-</head>
+	<title>Zardchar</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>	
 <body>
-	<h1>Hardik and Michael's Gym</h1>
+	<header>
+		<div>
+			<ul class="vertical-nav">
+				<li><img class="vertical-trainer" src="trainer-small.png"></li>
+				<li><img class="vertical-moltres" src="moltres-small.png"></li>
+				<li><img class="vertical-suicune" src="suicune-small.png"></li>
+				<li><img class="vertical-ho-oh" src="ho-oh-small.png"></li>
+			</ul>
+		</div>
+	</header>
 
+	<main>	
+		<section id="trainer" class="row valign-wrapper">
+			<div class="main-text col xl12 l12 m12 s12 center-align">
+				<img src="trainer.png">
+				<h1>Hi, I'm Zardchar</h1>
+				<h2>Welcome to my gym</h2>
+					<ul>
+						<li class="nav-li"><button class="nav-btn nav-btn-moltres">moltres</button></li>
+						<li class="nav-li"><button class="nav-btn nav-btn-suicune">suicune</button></li>
+						<li class="nav-li"><button class="nav-btn nav-btn-ho-oh">ho-oh</button></li>
+					</ul>
+			</div>
+		</section>
 
+		<section id="moltres" class="row valign-wrapper">
+			<div class="col xl4 offset-xl4 l6 offset-l3 m8 offset-m2 s10 offset-s1">
+				<ul class="moltres-ul">
+					<li class="li-img"><img class="responsive-img" id="moltresImg"></li>
+					<li class="moltres-name"></li>
+					<ul class="inner-ul">
+						<li>Hp</li>
+						<li class="moltres-hp-value"></li>
+					</ul>
+					<ul class="inner-ul">
+						<li>Attack</li>
+						<li class="moltres-attack-value"></li>
+					</ul>
+					<ul class="inner-ul">
+						<li>Defense</li>
+						<li class="moltres-defense-value"></li>
+					</ul>
+					<li class="moltres-abilities">abilities</li>
+					<ul class="inner-ul">
+						<li class="moltres-ability-1"></li>
+						<li class="moltres-ability-2"></li>
+					</ul>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="suicune" class="row valign-wrapper">
+			<div class="col xl4 offset-xl4 l6 offset-l3 m8 offset-m2 s10 offset-s1"">
+				<ul class="suicune-ul">
+					<li class="li-img"><img class="responsive-img" id="suicuneImg"></li>
+					<li class="suicune-name"></li>
+					<ul class="inner-ul">
+						<li class="suicune-hp"></li>
+						<li class="suicune-hp-value"></li>
+					</ul>
+					<ul class="inner-ul">
+						<li class="suicune-attack"></li>
+						<li class="suicune-attack-value"></li>
+					</ul>
+					<ul class="inner-ul">
+						<li class="suicune-defense"></li>
+						<li class="suicune-defense-value"></li>
+					</ul>
+					<li class="suicune-abilities">abilities</li>
+					<ul class="inner-ul">
+						<li class="suicune-ability-1"></li>
+						<li class="suicune-ability-2"></li>
+					</ul>
+				</ul>
+			</div>
+		</section>
+		
+		<section id="ho-oh" class="row valign-wrapper">
+			<div class="col xl4 offset-xl4 l6 offset-l3 m8 offset-m2 s10 offset-s1"">
+				<ul class="ho-oh-ul">
+					<li class="li-img"><img class="responsive-img" id="hoOhImg"></li>
+					<li class="ho-oh-name"></li>
+					<ul class="inner-ul">
+						<li class="ho-oh-hp"></li>
+						<li class="ho-oh-hp-value"></li>
+					</ul>
+					<ul class="inner-ul">
+						<li class="ho-oh-attack"></li>
+						<li class="ho-oh-attack-value"></li>
+					</ul>
+					<ul class="inner-ul">
+						<li class="ho-oh-defense"></li>
+						<li class="ho-oh-defense-value"></li>
+					</ul>
+					<li class="ho-oh-abilities">abilities</li>
+					<ul class="inner-ul">
+						<li class="ho-oh-ability-1"></li>
+						<li class="ho-oh-ability-2"></li>
+					</ul>
+				</ul>
+			</div>
+		</section>
+	</main>
 
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript" src="michael.js"></script>
 	<script type="text/javascript" src="main.js"></script>
