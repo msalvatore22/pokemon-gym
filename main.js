@@ -1,18 +1,20 @@
-
 myAxiosCalls(function(Jason){
     //we first have to set the variable of nameZ 
     //and link it ot the elemnt of the HTML file
     //next well pull data from our libraries
   
 //zapdos   
-	let nameZ = document.querySelector(".zname")
-	let hpValueZ = document.querySelector(".zhp")
-	let attackValueZ = document.querySelector(".zatk")
-	var defenseValueZ = document.querySelector(".zdef")  
-	let ability1Z = document.querySelector(".zabi1")
-	let ability2Z = document.querySelector(".zabi2") 
+
+	let nameZ = document.querySelector(".zapdos-name")
+	let hpValueZ = document.querySelector(".zapdos-hp-value")
+	let attackValueZ = document.querySelector(".zapdos-attack-value")
+	var defenseValueZ = document.querySelector(".zapdos-defense-value")  
+	let ability1Z = document.querySelector(".zapdos-ability-1")
+	let ability2Z = document.querySelector(".zapdos-ability-2") 
 	document.getElementById("zapdosImg").src = "images/Zapdos.png"
+
 	
+
 	nameZ.innerHTML = Jason.all[0].name  
 	hpValueZ.innerHTML = Jason.all[0].hp
 	attackValueZ.innerHTML = Jason.all[0].attack
@@ -21,14 +23,16 @@ myAxiosCalls(function(Jason){
 	ability2Z.innerHTML = Jason.all[0].abilities2
 
 //raikou
-	let nameR = document.querySelector(".rname")
-	let hpValueR = document.querySelector(".rhp")
-	let attackValueR = document.querySelector(".ratk")
-	let defenseValueR = document.querySelector(".rdef")  
-	let ability1R = document.querySelector(".rabi1")
-	let ability2R = document.querySelector(".rabi2")
+
+	let nameR = document.querySelector(".raikou-name")
+	let hpValueR = document.querySelector(".raikou-hp-value")
+	let attackValueR = document.querySelector(".raikou-attack-value")
+	let defenseValueR = document.querySelector(".raikou-defense-value")  
+	let ability1R = document.querySelector(".raikou-ability-1")
+	let ability2R = document.querySelector(".raikou-ability-2")
 	document.getElementById("raikouImg").src = "images/Raikou.png"
-	
+
+
 	nameR.innerHTML = Jason.all[0].name  
 	hpValueR.innerHTML = Jason.all[0].hp
 	attackValueR.innerHTML = Jason.all[0].attack
@@ -37,13 +41,14 @@ myAxiosCalls(function(Jason){
 	ability2R.innerHTML = Jason.all[0].abilities2
 
 //amphoras
-	let nameA = document.querySelector(".aname")
-	let hpValueA = document.querySelector(".ahp")
-	let attackValueA = document.querySelector(".aatk")
-	let defenseValueA = document.querySelector(".adef")  
-	let ability1A = document.querySelector(".aabi1")
-	let ability2A = document.querySelector(".aabi2")
-	document.getElementById("ampharosImg").src = "images/Ampharos.png"  
+
+	let nameA = document.querySelector(".ampharos-name")
+	let hpValueA = document.querySelector(".ampharos-hp-value")
+	let attackValueA = document.querySelector(".ampharos-attack-value")
+	let defenseValueA = document.querySelector(".ampharos-defense-value")  
+	let ability1A = document.querySelector(".ampharos-ability-1")
+	let ability2A = document.querySelector(".ampharos-ability-2")
+	document.getElementById("ampharosImg").src = "images/Ampharos.png"
 
 	nameA.innerHTML = Jason.all[0].name  
 	hpValueA.innerHTML = Jason.all[0].hp
